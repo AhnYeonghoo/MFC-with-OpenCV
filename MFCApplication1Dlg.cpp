@@ -31,6 +31,8 @@ public:
 // 구현입니다.
 protected:
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedBtnImageload();
 };
 
 CAboutDlg::CAboutDlg() : CDialogEx(IDD_ABOUTBOX)
@@ -43,6 +45,7 @@ void CAboutDlg::DoDataExchange(CDataExchange* pDX)
 }
 
 BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
+	ON_BN_CLICKED(IDC_BTN_IMAGELOAD, &CAboutDlg::OnBnClickedBtnImageload)
 END_MESSAGE_MAP()
 
 
@@ -153,3 +156,9 @@ HCURSOR CMFCApplication1Dlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CAboutDlg::OnBnClickedBtnImageload()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+}
