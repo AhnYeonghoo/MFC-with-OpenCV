@@ -83,6 +83,7 @@ void CMFCApplication1Dlg::drawImage()
 {
 	CClientDC dc(GetDlgItem(IDC_PC_VIEW));
 
+
 	CRect rect;
 	GetDlgItem(IDC_PC_VIEW)->GetClientRect(&rect);
 
